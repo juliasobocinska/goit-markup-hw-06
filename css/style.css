@@ -731,3 +731,36 @@ ul > .list {
 		letter-spacing: 0.04em;
 		color: #8e8f99;
 	}
+/*responsive*/
+
+/*mobile*/
+
+	@media (max-width: 320px) {
+	.ul-list,
+	.portfolio,
+	.ul-list-one,
+	.container-footer,
+	.footer {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.list-fourth:not(:last-child) {
+		margin-bottom: 48px;
+	}
+	.icons,
+	.address,
+	.link {
+		display: none;
+	}
+	.text {
+		justify-content: center;
+		margin: 0 auto;
+
+	}
+	.second-section-list {
+		max-width: 288px;
+	}
+}
