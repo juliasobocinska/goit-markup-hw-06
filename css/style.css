@@ -108,6 +108,7 @@ h1 {
 .second-menu {
 	display: flex;
 	gap: 40px;
+	
 }
 .address {
 	font-style: normal;
@@ -750,7 +751,7 @@ ul > .list {
 /*mobile*/
 
 	@media (max-width: 320px) {
-	.ul-list,
+	.container > .ul-list,
 	.portfolio,
 	.team,
 	.ul-list-one,
@@ -769,7 +770,7 @@ ul > .list {
 		width: 100%;
 	}
 	.section-third > .container {
-		padding: 0 28px;
+		padding: 0;
 	}
 
 	.section > .container {
@@ -827,7 +828,7 @@ ul > .list {
 	}
 
 	.second-section-list:not(:last-child),
-	.ul-list:not(:last-child) {
+	.container > .ul-list:not(:last-child) {
 		margin-bottom: 72px;
 	}
 
@@ -860,15 +861,13 @@ ul > .list {
 		margin-right: 16px;
 	}
 
-	.ul-list {
+	.container > .ul-list {
 		margin: 0;
 	}
 	
 	.container-footer {
 		height: 664px;
-		margin-left: 16px;
-		margin-right: 16px;
-		margin-bottom: 40px;
+		margin: 0;
 		align-items: baseline;
 		padding: 0;
 		max-width: 288px;
@@ -887,8 +886,7 @@ ul > .list {
 
 
 	.footer-margin {
-		margin-right: 16px;
-		margin-left: 16px;
+		margin: 0 16px;
 		margin-bottom: 72px;
 		margin-top: 96px;
 		max-width: 288px;
@@ -930,6 +928,12 @@ ul > .list {
 		height: 640px;
 		max-width: 320px;
 	}
+
+
+
+
+	
+	
 	/*.hamburger {
 		background-color: black;
 		--width: 16.8px;
